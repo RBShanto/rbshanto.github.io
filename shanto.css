@@ -27,7 +27,6 @@ p {
     align-items: center;
     justify-content: center;
 }
-/*header start
 
 #header {
     position:fixed;
@@ -40,8 +39,17 @@ p {
 #header .header {
     width:100vw;
     min-height:8vh;
-    background-color: black;
+    background-color: rgba(29, 26, 26,0.4);
 
+}
+#header .nav-bar .band a h1 {
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+
+}
+#header .nav-bar .band {
+    margin:auto 4px;
 }
 #header .header .nav-bar {
     display:flex;
@@ -61,7 +69,7 @@ p {
     width:100vw;
     height:100vh;
     top:0;
-    left:0;
+    left:100%;
     z-index: 1;
     display:flex;
     overflow: hidden;
@@ -69,6 +77,10 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: .5s ease;
+}
+#header  .nav-bar .nav-list ul.active {
+    left:10%;
 }
 #header  .nav-bar .nav-list ul a {
     display:block;
@@ -101,6 +113,75 @@ p {
 #header  .nav-bar .nav-list ul a:hover {
     color:crimson;
 }
+#header .hum {
+    height:60px;
+    width:60px;
+    z-index: 100;
+    border:3px solid white;
+    display:inline-block;
+    position:relative;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform:scale(.8);
+    margin:5px;
+}
+#header .hum::after {
+    content:'';
+    position:absolute;
+    border:3px solid white;
+    border-radius: 50%;
+    width:100%;
+    height:100%;
+    animation:bor 1s ease infinite;
+
+
+}
+@keyframes bor {
+    0% {opacity: 1;
+      transform:scale(1)
+    }
+    100% {
+opacity: 0;
+transform: scale(1.4);
+
+    }
+}
+#header .hum .bar {
+    height:2px;
+    width:22px;
+    background-color: white;
+    z-index: -1;
+    position:relative;
+}
+#header .hum .bar::after,
+#header .hum .bar::before {
+    content:"";
+    width:100%;
+    height:100%;
+    background-color: white;
+    position:absolute;
+    transition: .3s ease;
+    transition-property:top, bottom;
+    left:0;
+ 
+
+
+    
+}
+#header .hum .bar::after {
+   bottom:8px;
+
+}
+#header .hum .bar::before {
+     top:8px;
+}
+#header .hum.active .bar::after { bottom:0;}
+
+#header .hum.active .bar::before {
+    top:0;}
+
 
 
 /*header* end*/
