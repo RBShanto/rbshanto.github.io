@@ -127,6 +127,7 @@ p {
     transform:scale(.8);
     margin:5px;
 }
+
 #header .hum::after {
     content:'';
     position:absolute;

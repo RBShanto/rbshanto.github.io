@@ -4,4 +4,4 @@ const header = document.querySelector('#header .contaniner');
 hum.addEventListener('click',()=>{
     hum.classList.toggle('active');
     mobile_manu.classList.toggle('active');
-})
+});
