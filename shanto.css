@@ -38,18 +38,19 @@ p {
 }
 #header .header {
     width:100vw;
-    min-height:8vh;
+    min-height:6vh;
     background-color: rgba(29, 26, 26,0.4);
 
 }
 #header .nav-bar .band a h1 {
     text-decoration: none;
     color:white;
-    font-size: 30px;
+    font-size: 20px;
 
 }
 #header .nav-bar .band {
     margin:auto 4px;
+
 }
 #header .header .nav-bar {
     display:flex;
@@ -61,6 +62,7 @@ p {
     padding:0 15px;
 
 }
+
 #header  .nav-bar .nav-list ul {
     position:absolute;
     background-color: rgb(0, 0, 0);
@@ -97,10 +99,10 @@ p {
     top:50%;
     left:50%;
     transform: translate(-50%, -50%) scale(0);
-    font-size: 100px;
+    font-size: 50px;
     color:rgba(126, 226, 12, 0.2);;
     z-index: -1;
-    letter-spacing: 30px;
+    letter-spacing: 20px;
     transition:.5s ease letter-spacing;
 
 }
@@ -114,8 +116,8 @@ p {
     color:crimson;
 }
 #header .hum {
-    height:60px;
-    width:60px;
+    height:40px;
+    width:40px;
     z-index: 100;
     border:3px solid white;
     display:inline-block;
@@ -125,7 +127,7 @@ p {
     justify-content: center;
     align-items: center;
     transform:scale(.8);
-    margin:5px;
+    margin:2px;
 }
 
 #header .hum::after {
@@ -187,15 +189,16 @@ transform: scale(1.4);
 
 /*header* end*/
 #hero {
-    background:url(img//me.jpeg);
+    background:url(img//me.jpg);
     background-size: cover;
-    background-position: top center;
+    background-position: center center;
     position:relative;
+    background-repeat: no-repeat;
     z-index: 1;
 }
 #hero::after {
     content: "";
-    position:absolute;left:0;top:0;background-color: black;
+    position:absolute;left:0;top:0;background:linear-gradient(rgb(0, 0, 0),rgb(31, 67, 228));
     opacity: 0.7;
     height:100%;
     width:100%;
@@ -208,7 +211,7 @@ transform: scale(1.4);
     justify-content: flex-start;
 }
 #hero h1 {
-    font-size:4rem;
+    font-size:3rem;
     color:transparent;
     display:block;
     width:fit-content;
@@ -235,7 +238,7 @@ transform: scale(1.4);
     left:0;
     width:0%;
     height:100%;
-    background-color: crimson;
+    background-color: rgb(216, 24, 60);
     animation: apana 1s ease;
 
 }
@@ -254,17 +257,18 @@ transform: scale(1.4);
 .cta {
     display:inline-block;
     padding:10px 30px;
-    border:1px solid crimson;
+    border:1px solid rgb(22, 22, 26);
     color:white;
     background-color: transparent;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    font-size:2rem;
+    font-size:1.4rem;
     margin-top:30px;
     transition: .3s ease-in ;
+    border-radius: 5px;;
 }
 .cta:hover {
-    background-color: crimson;
+    background:linear-gradient(to right,rgba(126, 89, 211,0.5),rgba(212, 23, 23,0.5));
     color:white;
 }
 
@@ -273,14 +277,6 @@ transform: scale(1.4);
 
 
 /*hero section is end*/
-#service .service {
-    max-width: 1500px;
-    padding:100px 0;
-    margin:0 auto;
-    text-align: center;
-    flex-direction: column;
-    
-}
 .title {
     font-size: 4rem;
     text-transform:uppercase;
@@ -293,149 +289,7 @@ transform: scale(1.4);
 span {
     color:crimson;
 }
-.top p {
-    font-weight: 300;
-    font-size: 1.4rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.05rem;
-    text-align: center;
-}
-#service .service .bottom {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-#service .bottom .item {
-    flex-basis:80%;
-    display:flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction:column;
-    padding:30px;
-    border-radius: 10px;
-    background-image: url(img/card1.png);
-    background-size: cover;
-    margin:10px 5%;
-    position:relative;
-    z-index:1;
-    color:white;
-
-
-}
-#service .bottom .item::after{
-    content: "";
-    position:absolute;
-    height:100%;
-    width:100%;
-    background-color: black;
-    top:0;
-    left:0;
-    opacity: .4;
-    border-radius: 10px;
-    z-index: -1;
-
-    
-}
-.icon {
-    width:50px;
-    height:50px;
-    margin-bottom:10px;
-}
-.icon  img {
-    width:100%;
-    height:100%;
-
-}
-#service .bottom .item h1 {
-    font-size: 22px;
-    text-transform: uppercase;
-    margin-bottom:10px;
-}
-#service .bottom .item p {
-    color:white;
-    text-align: left;
-    line-height: 15px;
-    font-size: 12px;
-    font-weight:100;
-}
-/*start project section*/
-#project .project {
-    flex-direction: column;
-    margin:0 auto;
-
-}
-#project .allproject  {
-    margin:0 auto;
-    justify-content: center;
-    align-items: center;
-}
-
-#project.top  h1 {
-    margin-bottom:50px;
-}
-
-#project .project-item {
-    display:flex;
-    align-items: center;
-    justify-content:center;
-    flex-direction: column;
-    width:80%;
-    margin:40px auto ;
-    border-radius: 10px;
-    overflow:hidden;
-
-}
-#project .project-info {
-    padding:30px;
-    flex-basis:50%;
-    height:100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: black;
-    opacity: 0.8;
-    color:white;
-
-}
-#project .project-info h1 {
-	font-size: 4rem;
-	font-weight: 500;
-}
-#project .project-info h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	margin-top: 10px;
-}
-#project .project-info p {
-	color: white;
-    margin-top: 10px;
-    text-align: left;
-}
-#project .projectimg {
-    flex-basis:50%;
-    height:300px;
-	position: relative;
-    overflow:hidden;
-}
-#project .projectimg:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
-}#project .projectimg img {
-    transition:0.1s ease transform;
-}
-#project .project-item:hover .projectimg img {
-    transform: scale(1.1);
-}
-/*start aboutfffffffffffffffffffffffffffffffffffff */
+/*......................*/
 #about .about {
     display:flex;
     flex-direction:column-reverse;
@@ -552,7 +406,7 @@ span {
 
 }
 /*mifiya gjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj*/
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:569px) {
     .cta {
         font-size: 36px;
     }
@@ -652,23 +506,7 @@ span {
 
 }
 @media only screen and (min-width:1000px) {
-    #project .project .project-item {
-        display: flex;
-        flex-direction:row;
-        margin:0 auto;
-        border-radius: 0;
-        width:80%;
-    }
-    #project .project-item:nth-child(even) {
-        flex-direction:row-reverse;
-    }
-
-
-    #service .bottom .item  {
-        display:flex;
-        flex-basis:23%;
-        margin:1.5% auto;
-    }
+   
     .top p {
         font-weight: 300;
         font-size: 1.4rem;

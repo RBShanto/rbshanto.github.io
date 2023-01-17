@@ -5,3 +5,4 @@ hum.addEventListener('click',()=>{
     hum.classList.toggle('active');
     mobile_manu.classList.toggle('active');
 });
+
