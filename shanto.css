@@ -65,12 +65,12 @@ p {
 
 #header  .nav-bar .nav-list ul {
     position:absolute;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(30, 29, 34);
     opacity: .9;
     list-style: none;
-    width:100vw;
-    height:100vh;
-    top:0;
+    width:40vw;
+    height:50vh;
+    top:50px;
     left:100%;
     z-index: 1;
     display:flex;
@@ -82,7 +82,7 @@ p {
     transition: .5s ease;
 }
 #header  .nav-bar .nav-list ul.active {
-    left:10%;
+    left:60%;
 }
 #header  .nav-bar .nav-list ul a {
     display:block;
